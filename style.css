@@ -1,0 +1,18 @@
+.instruction {
+  font-family: helvetica;
+  position: absolute; 
+  top: 1px;
+  left: 50px;
+}
+
+h1 {
+  font-weight:normal;
+  font-size:70px;
+}
+
+h2 {
+  font-weight :lighter;
+  font-size:30px;
+  position:absolute;
+  top: 150px;
+}
