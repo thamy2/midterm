@@ -6,12 +6,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<canvas id='back'></canvas>
-<div class='instruction'>
-  <h1>BRAIN TEASER</h1>
-  <h2>Click the circles in the order shown</h2>
-</div>
-<script  src="script.js"></script>
+	<canvas id='c' width="1000" height="650" style="border:1px solid #d3d3d3;"></canvas>
+	<div class='instruction'>
+  		<h1>BRAIN TEASER</h1>
+  		<h2>Click the circles in the order shown</h2>
+	</div>
+
+<script>
+	var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.stroke();
+
+
+
+
+</script>
 
 </body>
 </html>
