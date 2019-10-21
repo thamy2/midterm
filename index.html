@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+	<header>
+  <h1>MEMORY</h1>
+</header>
+
   <meta charset="UTF-8">
   <title>Brain Teaser Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class='instruction'>
-  		<h1>Match Game</h1>
-	</div>
-	 <script  src="script.js"></script>
-	 <section class="memory-game">
-		<div class="memory-card" data-framework= "bubbles">
-			<img class="front-face" src="img/front.svg"
+	<section class="main">
+  <div class="box play">
+	<img class="front-face" src="img/front.svg"
+			alt="front"/>
+	<img class="back-face" src="img/bubbles.svg"
+			alt="bubbles"/></div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/bubbles.svg"
 			alt="bubbles"/>
-		</div>
-		<div class="memory-card" data-framework= "bubbles">
-			<img class="front-face" src="img/front.svg"
-			alt="front"/>
-			<img class="back-face" src="img/bubbles.svg"
-			alt="bubbles"/>
-		</div>
-		<div class="memory-card" data-framework= "circle">
+  </div>
+  <div class="box play">
 			<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/circle.svg"
 			alt="circle"/>
-		</div>
-		<div class="memory-card" data-framework= "circle">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/circle.svg"
 			alt="circle"/>
-		</div>
-		<div class="memory-card" data-framework= "dots">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	 <img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/dots.svg"
 			alt="dots"/>
-		</div>
-		<div class="memory-card" data-framework= "dots">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/dots.svg"
 			alt="dots"/>
-		</div>
-		<div class="memory-card" data-framework= "design">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/design.svg"
 			alt="design"/>
-		</div>
-		<div class="memory-card" data-framework= "design">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/design.svg"
 			alt="design"/>
-		</div>
-		<div class="memory-card" data-framework= "Ellipse">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/Ellipse.svg"
 			alt="Ellipse"/>
-		</div>
-		<div class="memory-card" data-framework= "Ellipse">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/Ellipse.svg"
 			alt="Ellipse"/>
-		</div>
-		<div class="memory-card" data-framework= "Mandala">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/Mandala.svg"
 			alt="Mandala"/>
-		</div>
-		<div class="memory-card" data-framework= "Mandala">
-			<img class="front-face" src="img/front.svg"
+  </div>
+  <div class="box play">
+  	<img class="front-face" src="img/front.svg"
 			alt="front"/>
 			<img class="back-face" src="img/Mandala.svg"
 			alt="Mandala"/>
-		</div>	 	
-	 </section>
-	 
-
+  </div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  <div class="box play"></div>
+  
+  <div id="state">
+    <span id="time">0</span>
+    <span id="score">0</span>
+  </div>
+</section>
 
 </body>
+<footer>
+	<section id="post" class="hidden">
+  <div>
+    <p>BRAVO !</p>
+    <p id="final"></p>
+    <br>
+    <p>
+      <a id="again">Play Again !</a>
+    </p>
+  </div>
+</section>
+</footer>
 </html>
